@@ -1,1 +1,1 @@
-punkt brown
+nltk.download('punkt')
