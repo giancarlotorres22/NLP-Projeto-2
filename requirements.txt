@@ -1,4 +1,5 @@
 nltk
+textblob
 Flask==1.1.1
 Flask-Cors==3.0.7
 flask-restplus==0.13.0
@@ -13,7 +14,6 @@ pandas
 Flask-Bootstrap==3.3.0.1
 spacy
 wordcloud
-textblob
 matplotlib
 jsonpatch==1.22
 jsonpointer==2.0
