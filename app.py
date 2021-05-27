@@ -9,10 +9,10 @@ import spacy
 from textblob import TextBlob 
 
 #inglês
-#nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_sm')
 
 #português
-nlp = spacy.load("pt_core_news_sm")
+#nlp = spacy.load("pt_core_news_sm")
 
 
 #pacotes para WordCloud e matplotlib 
@@ -21,8 +21,6 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import random
 import time
-
-
 
 
 app = Flask(__name__)
@@ -61,8 +59,7 @@ def analyze():
 		final_time = end-start
 	return render_template('index.html',ctext=rawtext,custom_tokens=custom_tokens,custom_postagging=custom_postagging,custom_namedentities=custom_namedentities,custom_wordinfo=custom_wordinfo,blob_sentiment=blob_sentiment,blob_subjectivity=blob_subjectivity,final_time=final_time,result_json=result_json)
 
-#ok
-
+#API simples para testes diretos
 @app.route('/api')
 def basic_api():
 	return render_template('restfulapidocs.html')
