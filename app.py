@@ -48,6 +48,8 @@ def analyze():
 		custom_postagging = [(word.text,word.tag_,word.pos_,word.dep_) for word in docx]
 		#reconhecimento da named entity (entidade nomeada)
 		custom_namedentities = [(entity.text,entity.label_)for entity in docx.ents]
+		
+		#Textblob
 		blob = TextBlob(rawtext)
 		blob_sentiment,blob_subjectivity = blob.sentiment.polarity ,blob.sentiment.subjectivity
 		
@@ -59,7 +61,8 @@ def analyze():
 		final_time = end-start
 	return render_template('index.html',ctext=rawtext,custom_tokens=custom_tokens,custom_postagging=custom_postagging,custom_namedentities=custom_namedentities,custom_wordinfo=custom_wordinfo,blob_sentiment=blob_sentiment,blob_subjectivity=blob_subjectivity,final_time=final_time,result_json=result_json)
 
-#rout
+#ok
+'''
 @app.route('/api')
 def basic_api():
 	return render_template('restfulapidocs.html')
@@ -143,7 +146,7 @@ def fig(mytext):
 
 @app.route('/about')
 def about():
-	return render_template('about.html')
+	return render_template('about.html')'''
 
 if __name__ == '__main__':
 	app.run(debug=True)
