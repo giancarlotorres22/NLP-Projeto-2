@@ -125,7 +125,7 @@ def nlpifyapi(mytext):
 
 @app.route('/images')
 def imagescloud():
-    return "Enter text into url eg. /fig/yourtext "
+    return "Digite seu texto na URL. Ex:https://nlp-projeto-2.herokuapp.com/fig/SeutextoEntreAspas"
 
 
 @app.route('/images/<mytext>')
