@@ -9,10 +9,10 @@ import spacy
 from textblob import TextBlob 
 
 #inglês
-nlp = spacy.load('en_core_web_sm')
+#nlp = spacy.load('en_core_web_sm')
 
 #português
-#nlp = spacy.load("pt_core_news_sm")
+nlp = spacy.load("pt_core_news_sm")
 
 
 #pacotes para WordCloud e matplotlib 
