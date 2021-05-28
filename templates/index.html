@@ -1,7 +1,7 @@
 {% extends "bootstrap/base.html" %}
 {% block content %}
 <head>
-	<!-- <title>SpaCify</title> -->
+	
 	 <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,29 +12,7 @@
 </head>
 <body>
 {% block navbar %}
-	<!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">NLP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{{url_for('index')}}">H <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('basic_api')}}">A</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="{{url_for('imagescloud')}}">I</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('about')}}">Sobre</a>
-          </li>
-        </ul>
-        
-      </div>
-    </nav>-->
+	
 
     {% endblock %}
     <br/>
@@ -101,7 +79,7 @@
 				<div class="tab-pane" id="1b">
           <h3>Detalhes</h3>
           <div class="container">
-             <!-- WORD INFO -->
+             <!-- Informação da palavra -->
             <div class="card-footer text-muted">
                   <table class="table table-striped table-hover table-dark" >
                       
@@ -129,7 +107,7 @@
 
                 </div>
 
-                <!-- WORD INFO -->
+                <!-- Informação da palavra  -->
               </div>
 				</div>
 				<div class="tab-pane" id="2a">
@@ -141,7 +119,7 @@
         <div class="tab-pane" id="3a">
           <h3>Partes do discurso</h3>
             <div class="container">
-           <!-- Parts of Speech Tagging  -->
+           <!-- Partes de Tagging -->
           <div class="card-footer text-muted">
                 <table class="table table-striped table-hover table-dark" >
                     
@@ -169,7 +147,7 @@
 
               </div>
 
-     <!-- Parts of Speech Tagging  -->
+     <!--  Partes de Tagging-->
       </div>
 				</div>
           <div class="tab-pane" id="4a">
@@ -198,7 +176,7 @@
 		<div class="tab-pane" id="5a">
           <h3>Significado</h3>
 
-             <!-- For loop Previously Here  -->
+             
       <table class="table table-striped table-hover table-dark" >
         <thead >
           <tr>
@@ -211,8 +189,8 @@
         <tbody>
           <tr>
             <td>{{i}}</th>
-            <!--<td><a href="http://www.dictionary.com/browse/{{i}}?s="  target="_blank" type="button" class="btn btn-primary" style="float:right;font-size:9px;color:#fff;">Abrir</a></td>-->
-            <td><a href="https://www.dicio.com.br/pesquisa.php?q={{i}}"  target="_blank" type="button" class="btn btn-primary" style="float:right;font-size:9px;color:#fff;">Abrir</a></td>
+				<td><a href="http://www.dictionary.com/browse/{{i}}?s="  target="_blank" type="button" class="btn btn-primary" style="float:right;font-size:9px;color:#fff;">Abrir</a></td>
+            <!--<td><a href="https://www.dicio.com.br/pesquisa.php?q={{i}}"  target="_blank" type="button" class="btn btn-primary" style="float:right;font-size:9px;color:#fff;">Abrir</a></td>-->
 			
           </tr>
       </tbody>{% endfor %}
@@ -233,13 +211,6 @@
 </div>
 
 
-
-  <!-- <span class="badge badge-success">2</span>
-<span class="badge badge-warning">4</span>
-<span class="badge badge-red">6</span>
-<span class="badge badge-info">8</span>
-<span class="badge badge-inverse">10</span>
-  -->
 </body>
 {% endblock %}
 
